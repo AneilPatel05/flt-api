@@ -2,22 +2,16 @@ var mongoose = require('mongoose');
 var Promise = require('bluebird');
 var Schema = mongoose.Schema;
 var Messageschema = new mongoose.Schema({
-	order_id: { 
+	link_id: { 
 		type: Schema.Types.ObjectId, ref: 'Order' 
 	},
-	ad_id: { 
-		type: Schema.Types.ObjectId, ref: 'Advertisement' 
-	},
-	createdby: {
+	user: {
 		type: 'String'
 	},
-	createdfor: {
+	link_type: {
 		type: 'String'
 	},
-	message_type: {
-		type: 'String'
-	},
-	message_text: {
+	link_text: {
 		type: 'String'
 	}
 },

@@ -5,15 +5,6 @@ var Userschema = new mongoose.Schema({
 
 	username: { 
 		type: 'String' 
-	},
-	tos_accepted: {
-		type: 'Boolean'
-	},
-	whitelisted: {
-		type: 'Boolean'
-	},
-	referredby: {
-		type: 'String'
 	}
 },
 {
